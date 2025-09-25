@@ -1,6 +1,10 @@
 ﻿Console.Write("Ededi daxil edin:");
 int eded = int.Parse(Console.ReadLine());
 
+if (eded < 0 || eded > 100)
+{
+	Console.WriteLine("Xəta: Bal 0 ilə 100 arasında olmalıdır!");
+}
 if (90 < eded && eded <= 100)
 {
 	Console.WriteLine("A");
