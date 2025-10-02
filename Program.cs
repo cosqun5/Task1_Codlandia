@@ -1,7 +1,23 @@
-﻿string name = "Codelandia";
-string name1 = "";
-for (int i = name.Length - 1; i >= 0; i--)
+﻿Console.WriteLine("3 reqemli ededi daxil edin");
+int eded = int.Parse(Console.ReadLine());
+if (eded < 100 || eded>999)
 {
-	name1 = name1+name[i];
+	Console.WriteLine("3 reqemli eded daxil edin!");
+	return;
 }
-Console.WriteLine(name1);
+
+int birincieded = eded / 100;
+int ikincieded = eded % 10;
+
+if (birincieded>ikincieded)
+{
+	Console.WriteLine("birinci eded boyukdur!");
+}
+else if (ikincieded > birincieded)
+{
+	Console.WriteLine("ikinci eded boyukdur!");
+}
+else
+{
+	Console.WriteLine("ededler bir birine beraberdir");
+}
