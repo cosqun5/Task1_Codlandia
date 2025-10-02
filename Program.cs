@@ -1,9 +1,7 @@
-﻿int[] list =  { 1, 2, 3, 4, 5 ,20};
-float orta = 0;
-for (int i = 0; i < list.Length; i++)
+﻿string name = "Codelandia";
+string name1 = "";
+for (int i = name.Length - 1; i >= 0; i--)
 {
-	orta += list[i];
-	
+	name1 = name1+name[i];
 }
-orta = orta / list.Length;
-Console.WriteLine(	orta);
+Console.WriteLine(name1);
